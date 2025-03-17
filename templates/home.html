@@ -5,5 +5,25 @@
     <h1 class="text-center display-1 blog-heading">Our Lab</h1>
 </div>
 <div class="container">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img class="slideImage" src="https://www.webfx.com/wp-content/uploads/2021/10/generic-image-placeholder.png"/>
+        </div>
+        <div class="mySlides fade">
+            <img class="slideImage" src="../static\images\UTlogo.png"/>
+        </div>
+        <div class="mySlides fade">
+            <img class="slideImage" src="https://media.geeksforgeeks.org/wp-content/uploads/20240306115926/HTML-placeholder_attribute.png"/>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 </div>
 {% endblock %}

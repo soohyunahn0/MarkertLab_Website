@@ -21,6 +21,12 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="{{url_for('research')}}">Research</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{{url_for('FRI')}}">FRI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{{url_for('publications')}}">Publications</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -40,9 +46,10 @@
             <p>Laboratory: (512) 471-1978</p>
             <p>markert@physics.utexas.edu</p>
             <hr class="my-1 border-dark UTAustin">
-            <img class="UTAustinLogo" src="{{ url_for('static', filename='images/UTlogo.png') }}" alt="UTAustinLogo">
+            <span><img class="UTAustinLogo" src="{{ url_for('static', filename='images/UTlogo.png') }}" alt="UTAustinLogo"/></span>
         </div>
         <hr class="my-1 border-dark UTAustin">
     </div>
   </footer>
+  <script src="static/jss.js"></script>
 </html>
