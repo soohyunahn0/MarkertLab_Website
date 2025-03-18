@@ -5,10 +5,95 @@
     <h1 class="text-center display-1 blog-heading p-4">Our Group</h1>
 </div>
 <div class="container researcher text-center rounded p-4">
-    <div class="UTAustin p-4">
-        <div class="text-white">
-            <h3>Prof. John T. Markert</h3>
+    <div class="rounded-3 UTAustin p-4 e_researcher">
+        <h2 class="text-white">Principal Investigator</h2>
+        <div class = 'row justify-content-center'>
+            {% for people in curr_lab_people %}
+                {% if people.role == 'PI' %}
+                        <div class="col-4 text-white p-3">
+                                <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
+                                <p class="people_txt text-white">{{people.name}}</p>
+                                <p class="people_txt text-white">{{people.email}}</p>
+                                <hr class="my-1 border-dark text-white">
+                                <p class="people_txt text-white">{{people.blurb}}</p>
+                        </div>
+                {% endif %}
+            {% endfor %}
         </div>
+    </div>
+    <br>
+    <div class="rounded-3 UTAustin p-4 e_researcher">
+        <h2 class="text-white">Senior Researchers</h2>
+        <div class = 'row justify-content-center'>
+            {% for people in curr_lab_people %}
+                {% if people.role == 'PostDoc' %}
+                        <div class="col-4 text-white p-3">
+                                <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
+                                <p class="people_txt text-white">{{people.name}}</p>
+                                <p class="people_txt text-white">{{people.email}}</p>
+                                <hr class="my-1 border-dark text-white">
+                                <p class="people_txt text-white">{{people.blurb}}</p>
+                        </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <div class="rounded-3 UTAustin p-4 e_researcher">
+        <h2 class="text-white">Graduate Students</h2>
+        <div class = 'row justify-content-center'>
+            {% for people in curr_lab_people %}
+                {% if people.role == 'Graduate' %}
+                        <div class="col-4 text-white p-3">
+                                <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
+                                <p class="people_txt text-white">{{people.name}}</p>
+                                <p class="people_txt text-white">{{people.email}}</p>
+                                <hr class="my-1 border-dark text-white">
+                                <p class="people_txt text-white">{{people.blurb}}</p>
+                        </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <br>
+    <div class="rounded-3 UTAustin p-4 e_researcher">
+        <h2 class="text-white">Undergraduate Students</h2>
+        <div class = 'row justify-content-center'>
+        {% for people in curr_lab_people %}
+            {% if people.role == 'Undergraduate' %}
+                    <div class="col-4 text-white p-3">
+                            <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
+                            <p class="people_txt text-white">{{people.name}}</p>
+                            <p class="people_txt text-white">{{people.email}}</p>
+                            <hr class="my-1 border-dark text-white">
+                            <p class="people_txt text-white">{{people.blurb}}</p>
+                    </div>
+            {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="rounded-3 UTAustin p-4 e_researcher">
+        <h2 class="text-white">Former Members</h2>
+        <table class="table table-bordered text-white former">
+            <tr class="text-white">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Current Position</th>
+                    </tr>
+                </thead>
+            </tr>
+            {% for people in former_lab_people %}
+                <tbody>
+                    <tr>
+                        <th class="people_txt text-white">{{people.name}}</th>
+                        <th class="people_txt text-white">{{people.current_position}}</th>
+                    </tr>
+                </tbody>
+            {% endfor %}
+        </table>
     </div>
 </div>
 {% endblock %}

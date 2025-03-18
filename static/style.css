@@ -18,6 +18,34 @@
     margin: auto;
 }
 
+.e_researcher{
+    padding: 3%;
+    margin: auto;
+}
+
+.former{
+    max-width: 80%;
+    text-align: center;
+    margin: auto
+}
+
+.people_image{
+    height: auto;
+    max-width: 75%;
+    margin: auto;
+}
+
+.people_txt{
+    height: auto;
+    max-width: 90%;
+    margin: auto;
+}
+
+.col-4{
+    display: inline-block;
+    float: none;
+}
+
 .slideshow-container {
     max-height: 500px;
     height: 15%;
