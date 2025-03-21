@@ -14,7 +14,8 @@
 }
 
 .researcher{
-    max-width: 60%;
+    width: 100%;
+    height: auto;
     margin: auto;
 }
 
@@ -24,26 +25,31 @@
 }
 
 .former{
-    max-width: 80%;
+    width: 80%;
     text-align: center;
     margin: auto
 }
 
 .people_image{
     height: auto;
-    max-width: 75%;
+    width: 85%;
     margin: auto;
 }
 
 .people_txt{
     height: auto;
-    max-width: 90%;
+    width: 90%;
     margin: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
-.col-4{
-    display: inline-block;
-    float: none;
+.table{
+    width: auto;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin: auto;
 }
 
 .slideshow-container {
