@@ -86,5 +86,5 @@ former_lab_people = [
     {
         'name': 'Prof. Meow',
         'current_position': 'lorem blablablabla yap yap'
-    },
+    }
 ]

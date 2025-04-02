@@ -8,5 +8,11 @@
     <br>
     <hr class="my-1 border-dark UTAustin">
     <br>
+    <ol reversed>
+    {% for publication in lab_publications %}
+        <li>{{ publication.citation }}</li>
+        <br>
+    {% endfor %}
+    </ol>   
 </div>
 {% endblock %}

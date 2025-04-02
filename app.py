@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from people import curr_lab_people, former_lab_people
+from publications import lab_publications
 
 app = Flask(__name__)
 
@@ -24,4 +25,4 @@ def FRI():
 
 @app.route("/publications")
 def publications():
-    return render_template("publications.html")
+    return render_template("publications.html", lab_publications=lab_publications)
