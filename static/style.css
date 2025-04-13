@@ -4,13 +4,38 @@
 }
 
 .UTAustin_txt{
-    color: #bf5700;
+    color: whitesmoke;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 90%;
+    margin-inline: 10%;
+    margin-right: 10%;
 }
 
 .UTAustinLogo{
-    height: 7%;
-    width: auto;
-    margin: auto;
+  height: 7%;
+  width: auto;
+  margin: auto;
+}
+
+.background_color0{
+  color: #f7f7f2;
+  background-color: #f7f7f2;
+}
+
+.background_color1{
+  color: #e8e5da;
+  background-color: #e8e5da;
+}
+
+.background_color2{
+  color: #bdb7a6;
+  background-color: #bdb7a6;
+}
+
+.background_color3{
+  color: #d6cba7;
+  background-color: #d6cba7;
 }
 
 .researcher{
@@ -52,17 +77,26 @@
     margin: auto;
 }
 
+.slideshow-container0 {
+  height: 50%;
+  width: 100%;
+  max-height: 50%;
+  max-width: 100%;
+}
+
 .slideshow-container {
-    max-height: 500px;
-    height: 15%;
-    width: auto;
+    max-height: 100%;
+    max-width: 100%;
     margin: auto;
     text-align: center;
+    object-fit: contain;
   }
   
   .mySlides {
-    display: none;
+    max-height: 100%;
+    max-width: 100%;
     margin: auto;
+    object-fit: contain;
   }
   
   .prev, .next {
@@ -123,10 +157,25 @@
   }
 
   .slideImage{
-    height: 100%;
-    width: auto;
-    margin: auto;
+    height: 80%;
+    max-height: 80%;
+    max-width: 80%;
+    object-fit: contain; 
     overflow: hidden;
+    display: block;
+    margin: auto;
+  }
+
+  @media (max-width: 1000px) {
+    .slideImage{
+      height: 30%;
+      max-height: 35%;
+      max-width: 80%;
+      object-fit: contain; 
+      overflow: hidden;
+      display: block;
+      margin: auto;
+    }
   }
   
   .fade {

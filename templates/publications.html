@@ -2,15 +2,18 @@
 
 {% block content %}
 <div class="container-fluid" id="cover">
-    <h1 class="text-center display-1 blog-heading p-4">Our Publications</h1>
+    <h1 class="text-center text-dark display-1 blog-heading p-4">Our Publications</h1>
+    <br>
+    <hr class="my-1 border-dark UTAustin">
+    <br>
 </div>
-<div class="container">
+<div class="container background_color0 rounded-3 p-4">
     <br>
     <hr class="my-1 border-dark UTAustin">
     <br>
     <ol reversed>
     {% for publication in lab_publications %}
-        <li>{{ publication.citation }}</li>
+        <li class="text-dark">{{ publication.citation }}</li>
         <br>
     {% endfor %}
     </ol>   

@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body>
+  <body class="background_color1">
     <nav class="navbar navbar-expand-lg p-4 UTAustin">
       <div class="container-fluid">
         <button class="btn btn-outline-white d-lg-none text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
@@ -65,18 +65,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   </body>
   <footer class="text-dark py-4">
-    <div class="container">
+    <div class="my-1 UTAustin">
         <hr class="my-1 border-dark UTAustin">
         <div class="UTAustin_txt">
             <h5>Contact Us</h5>
+            <hr class="my-1 border-dark">
             <p>Dr. John T. Markert</p>
             <p>Office: (512) 471-1039</p>
             <p>Laboratory: (512) 471-1978</p>
             <p>markert@physics.utexas.edu</p>
-            <hr class="my-1 border-dark UTAustin">
-            <span><img class="UTAustinLogo" src="{{ url_for('static', filename='images/UTlogo.png') }}" alt="UTAustinLogo"/></span>
+            <hr class="my-1 border-dark">
+            <span><img class="UTAustinLogo" src="{{ url_for('static', filename='images/UTlogo_colorbackground.png') }}" alt="UTAustinLogo"/></span>
         </div>
-        <hr class="my-1 border-dark UTAustin">
+        <hr class="my-1 border-dark UTAustin"/>
     </div>
   </footer>
   <script src="static/jss.js"></script>

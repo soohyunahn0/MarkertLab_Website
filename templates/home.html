@@ -2,12 +2,15 @@
 
 {% block content %}
 <div class="container-fluid" id="cover">
-    <h1 class="text-center display-1 blog-heading p-4">Our Lab</h1>
+    <h1 class="text-center display-1 blog-heading p-4 text-dark">Our Lab</h1>
 </div>
 <div class="container">
-    <div class="rounded-3 UTAustin p-4 text-white">
-        <h1>What We Do</h1>
-        <hr class="my-1 border-dark text-white">
+    <br>
+    <hr class="my-1 border-dark UTAustin">
+    <br>
+    <div class="rounded-3 p-4 text-dark background_color0">
+        <h1 class="text-dark">What We Do</h1>
+        <hr class="my-1 border-dark text-dark">
         <p>Our research is focused on understanding phenomena in superconductors and epitaxial oxide interfaces, 
             as well as using nuclear magnetic resonance force microscopy to study spin dynamics in micro samples.
             <br>
@@ -31,23 +34,30 @@
     <br>
     <hr class="my-1 border-dark UTAustin">
     <br>
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img class="slideImage" src="https://www.webfx.com/wp-content/uploads/2021/10/generic-image-placeholder.png"/>
+    <div class="row rounded-3 p-4 background_color0 slideshow-container0" style="margin: 0 auto;">
+        <div class="col-md-4 text-dark">
+            <h3>Welcome!</h3>
+            <hr class="my-1 border-dark text-dark">
+            <p>This is the left column where you can place any text, descriptions, or navigation.</p>
+            <p>You can customize this with links, lists, or even buttons!</p>
         </div>
-        <div class="mySlides fade">
-            <img class="slideImage" src="../static\images\UTlogo.png"/>
+        <div class="col-md-8 text-center my-auto">
+            <div class="slideshow-container my-auto" style="padding: 0px; border: 0px; margin: 0px;">
+                <div class="mySlides fade img-fluid">
+                <img class="slideImage" src="https://www.webfx.com/wp-content/uploads/2021/10/generic-image-placeholder.png"/>
+                </div>
+                <div class="mySlides fade img-fluid">
+                    <img class="slideImage" src="../static\images\UTlogo.png"/>
+                </div>
+                <div class="mySlides fade img-fluid">
+                    <img class="slideImage" src="https://media.geeksforgeeks.org/wp-content/uploads/20240306115926/HTML-placeholder_attribute.png"/>
+                </div>
+            </div>
         </div>
-        <div class="mySlides fade">
-            <img class="slideImage" src="https://media.geeksforgeeks.org/wp-content/uploads/20240306115926/HTML-placeholder_attribute.png"/>
-        </div>
-      </div>
-      <br>
-      
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+        <br>
+    </div>
+    <br>
+    <hr class="my-1 border-dark UTAustin">
+    <br>
 </div>
 {% endblock %}

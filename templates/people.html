@@ -2,74 +2,74 @@
 
 {% block content %}
 <div class="container-fluid" id="cover">
-    <h1 class="text-center display-1 blog-heading p-4">Our Group</h1>
-</div>
-<div class="container researcher text-center rounded p-4">
+    <h1 class="text-center display-1 blog-heading p-4 text-dark">Our Group</h1>
     <br>
     <hr class="my-1 border-dark UTAustin">
     <br>
-    <div class="rounded-3 UTAustin p-4 e_researcher">
-        <h2 class="text-white">Principal Investigator</h2>
+</div>
+<div class="container researcher text-center rounded">
+    <div class="rounded-3 background_color0 p-4 e_researcher">
+        <h2 class="text-dark">Principal Investigator</h2>
         <div class = 'row justify-content-center'>
             {% for people in curr_lab_people %}
                 {% if people.role == 'PI' %}
-                        <div class="col-lg-4 col-md-6 col-sm-12 text-white p-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-dark p-3">
                                 <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
-                                <p class="people_txt text-white">{{people.name}}</p>
-                                <p class="people_txt text-white">{{people.email}}</p>
-                                <hr class="my-1 border-dark text-white">
-                                <p class="people_txt text-white">{{people.blurb}}</p>
+                                <p class="people_txt">{{people.name}}</p>
+                                <p class="people_txt">{{people.email}}</p>
+                                <hr class="my-1 border-dark">
+                                <p class="people_txt">{{people.blurb}}</p>
                         </div>
                 {% endif %}
             {% endfor %}
         </div>
     </div>
     <br>
-    <div class="rounded-3 UTAustin p-4 e_researcher">
-        <h2 class="text-white">Senior Researchers</h2>
+    <div class="rounded-3 background_color0 p-4 e_researcher">
+        <h2 class="text-dark">Senior Researchers</h2>
         <div class = 'row justify-content-center'>
             {% for people in curr_lab_people %}
                 {% if people.role == 'PostDoc' %}
-                        <div class="col-lg-4 col-md-6 col-sm-12 text-white p-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-dark p-3">
                                 <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
-                                <p class="people_txt text-white">{{people.name}}</p>
-                                <p class="people_txt text-white">{{people.email}}</p>
-                                <hr class="my-1 border-dark text-white">
-                                <p class="people_txt text-white">{{people.blurb}}</p>
+                                <p class="people_txt">{{people.name}}</p>
+                                <p class="people_txt">{{people.email}}</p>
+                                <hr class="my-1 border-dark">
+                                <p class="people_txt">{{people.blurb}}</p>
                         </div>
                 {% endif %}
             {% endfor %}
         </div>
     </div>
     <br>
-    <div class="rounded-3 UTAustin p-4 e_researcher">
-        <h2 class="text-white">Graduate Students</h2>
+    <div class="rounded-3 background_color0 p-4 e_researcher">
+        <h2 class="text-dark">Graduate Students</h2>
         <div class = 'row justify-content-center'>
             {% for people in curr_lab_people %}
                 {% if people.role == 'Graduate' %}
-                        <div class="col-lg-4 col-md-6 col-sm-12 text-white p-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12 text-dark p-3">
                                 <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
-                                <p class="people_txt text-white">{{people.name}}</p>
-                                <p class="people_txt text-white">{{people.email}}</p>
-                                <hr class="my-1 border-dark text-white">
-                                <p class="people_txt text-white">{{people.blurb}}</p>
+                                <p class="people_txt">{{people.name}}</p>
+                                <p class="people_txt">{{people.email}}</p>
+                                <hr class="my-1 border-dark">
+                                <p class="people_txt">{{people.blurb}}</p>
                         </div>
                 {% endif %}
             {% endfor %}
         </div>
     </div>
     <br>
-    <div class="rounded-3 UTAustin p-4 e_researcher">
-        <h2 class="text-white">Undergraduate Students</h2>
+    <div class="rounded-3 background_color0 p-4 e_researcher">
+        <h2 class="text-dark">Undergraduate Students</h2>
         <div class = 'row justify-content-center'>
         {% for people in curr_lab_people %}
             {% if people.role == 'Undergraduate' %}
-                    <div class="col-lg-4 col-md-6 col-sm-12 text-white p-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12 text-dark p-3">
                             <img class="people_image" src="{{ people.picture }}" style="padding: 1%;">
-                            <p class="people_txt text-white">{{people.name}}</p>
-                            <p class="people_txt text-white">{{people.email}}</p>
-                            <hr class="my-1 border-dark text-white">
-                            <p class="people_txt text-white">{{people.blurb}}</p>
+                            <p class="people_txt">{{people.name}}</p>
+                            <p class="people_txt ">{{people.email}}</p>
+                            <hr class="my-1 border-dark">
+                            <p class="people_txt">{{people.blurb}}</p>
                     </div>
             {% endif %}
         {% endfor %}
@@ -77,11 +77,11 @@
     </div>
     <br>
     <br>
-    <div class="rounded-3 UTAustin table-responsive e_researcher text-center">
-        <h2 class="text-white">Former Members</h2>
+    <div class="rounded-3 background_color0 table-responsive e_researcher text-center">
+        <h2 class="text-dark">Former Members</h2>
         <br>
-        <table class="table table-bordered text-white text-center w-auto">
-            <tr class="text-white">
+        <table class="table table-bordered text-dark text-center w-auto">
+            <tr class="text-dark">
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -92,8 +92,8 @@
             {% for people in former_lab_people %}
                 <tbody>
                     <tr>
-                        <th class="text-white">{{people.name}}</th>
-                        <th class="text-white">{{people.current_position}}</th>
+                        <th class="text-dark">{{people.name}}</th>
+                        <th class="text-dark">{{people.current_position}}</th>
                     </tr>
                 </tbody>
             {% endfor %}
