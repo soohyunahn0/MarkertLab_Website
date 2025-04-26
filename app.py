@@ -4,8 +4,6 @@ from publications import lab_publications
 
 app = Flask(__name__)
 
-app.secret_key = "gUG*7BNmM*[*hUd7&y6hb}GlTcub`C"
-
 @app.route("/home")
 @app.route("/")
 def home():
