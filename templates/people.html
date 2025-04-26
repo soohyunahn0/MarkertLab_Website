@@ -2,7 +2,8 @@
 
 {% block content %}
 <div class="container-fluid" id="cover">
-    <h1 class="text-center display-1 blog-heading p-4 text-dark">Our Group</h1>
+    <br>
+    <h1 class="text-center display-1 blog-heading p-4 rounded-3 text-white" style="background-color:#cf7021">Our Group</h1>
     <br>
     <hr class="my-1 border-dark UTAustin">
     <br>
@@ -10,6 +11,9 @@
 <div class="container researcher text-center rounded">
     <div class="rounded-3 background_color0 p-4 e_researcher">
         <h2 class="text-dark">Principal Investigator</h2>
+        <br>
+        <hr class="my-1 border-dark UTAustin">
+        <br>
         <div class = 'row justify-content-center'>
             {% for people in curr_lab_people %}
                 {% if people.role == 'PI' %}
@@ -27,6 +31,9 @@
     <br>
     <div class="rounded-3 background_color0 p-4 e_researcher">
         <h2 class="text-dark">Senior Researchers</h2>
+        <br>
+        <hr class="my-1 border-dark UTAustin">
+        <br>
         <div class = 'row justify-content-center'>
             {% for people in curr_lab_people %}
                 {% if people.role == 'PostDoc' %}
@@ -44,6 +51,9 @@
     <br>
     <div class="rounded-3 background_color0 p-4 e_researcher">
         <h2 class="text-dark">Graduate Students</h2>
+        <br>
+        <hr class="my-1 border-dark UTAustin">
+        <br>
         <div class = 'row justify-content-center'>
             {% for people in curr_lab_people %}
                 {% if people.role == 'Graduate' %}
@@ -61,6 +71,9 @@
     <br>
     <div class="rounded-3 background_color0 p-4 e_researcher">
         <h2 class="text-dark">Undergraduate Students</h2>
+        <br>
+        <hr class="my-1 border-dark UTAustin">
+        <br>
         <div class = 'row justify-content-center'>
         {% for people in curr_lab_people %}
             {% if people.role == 'Undergraduate' %}
@@ -79,6 +92,8 @@
     <br>
     <div class="rounded-3 background_color0 table-responsive e_researcher text-center">
         <h2 class="text-dark">Former Members</h2>
+        <br>
+        <hr class="my-1 border-dark UTAustin">
         <br>
         <table class="table table-bordered text-dark text-center w-auto">
             <tr class="text-dark">
